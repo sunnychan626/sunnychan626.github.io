@@ -1,0 +1,55 @@
+/* Jumbotron
+================================= */
+
+.jumbotron {
+    text-align: left;
+    padding-top: 73px;
+    margin-bottom: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
+        url('../img/home-bg.JPG');
+    background-color: #2D5699;
+}
+
+@media (min-width: 1200px) {
+    /* parallax effect */
+    .jumbotron {
+        background-attachment: fixed;
+    }
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron p{
+    color: #fff;
+}
+
+.jumbotron h3, .jumbotron h4 {
+    line-height: 1.2;
+    margin-left: 13px;
+}
+
+.thumb {
+  margin-bottom: 50px;
+}
+
+/* Media Queries
+================================= */
+
+@media (max-width: 767px) {
+   .thumb {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+  }
+
+  .jumbotron {
+      margin-bottom: 50px;
+  }
+
+  .jumbotron h3, .jumbotron h4 {
+      margin-left: 30px;
+  }
+
+}

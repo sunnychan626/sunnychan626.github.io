@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6, p, a, .badge {
+    font-family: "open-sans",sans-serif;
+    color: #606060;
+}
+
+a {
+    color: rgba(60, 110, 180, 1);
+}
+
+.badge {
+    color: #fff;
+    font-weight: normal;
+    padding: 4px 9px;
+    background-color: rgba(48, 48, 48, 0.7);
+}
+
+blockquote {
+    text-align: left;
+}
+
+blockquote footer {
+    font-family: "open-sans",sans-serif;
+}

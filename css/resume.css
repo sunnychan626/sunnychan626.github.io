@@ -1,0 +1,117 @@
+/* Jumbotron
+================================= */
+
+.jumbotron {
+    text-align: left;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:
+        linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
+        url('../img/home-bg.JPG');
+    background-color: #2D5699;
+}
+
+@media (min-width: 1200px) {
+    /* parallax effect */
+    .jumbotron {
+        background-attachment: fixed;
+    }
+}
+
+.jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron p{
+    color: #fff;
+}
+
+.jumbotron h1 {
+    font-family: "open-sans",sans-serif;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.jumbotron h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+#profile-pic {
+    border-style: solid;
+    border-width: medium;
+    border-color: #fff;
+}
+
+.jumbotron .glyphicon {
+    font-size: 0.9em;
+    display: inline;
+    color: inherit;
+}
+
+/* Resume
+================================= */
+
+.resume {
+    margin-top: 50px;
+}
+
+.resume-section {
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.entry {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.section-title h5, .entry h5 {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.section-title h5 {
+    color: rgba(60, 110, 180, 1);
+}
+
+.entry h5 {
+    color: rgba(55, 56, 56, 0.9);
+}
+
+.entry-detail {
+    font-weight: 400;
+    color: rgba(96, 96, 96, 1);
+}
+
+.entry h6 {
+    font-size: 1.1em;
+}
+
+.entry-description {
+    line-height: 1.75;
+    font-weight: 300;
+    color: rgba(114, 121, 120, 1);
+}
+
+.light-text {
+    font-weight: 300;
+    color: rgba(114, 121, 120, 0.75);
+}
+
+/* Media Queries
+================================= */
+
+@media (max-width: 767px) {
+    /* parallax effect */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
