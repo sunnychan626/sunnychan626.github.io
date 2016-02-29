@@ -31,7 +31,13 @@
 }
 
 .thumb {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.thumb:hover {
+    transform: scale(1.075);
 }
 
 /* Media Queries
@@ -42,6 +48,10 @@
     padding-right: 0px;
     padding-left: 0px;
     margin-bottom: 25px;
+  }
+
+  .thumb:hover {
+      transform: scale(1); /* don't scale up when displaying edge-to-edge
   }
 
   .jumbotron {

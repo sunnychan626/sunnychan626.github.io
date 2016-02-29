@@ -111,44 +111,6 @@ html,body {
   line-height: 1;
 }
 
-.btn:active{
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: none;
-    transition: none;
-}
-
-.btn-custom {
-  margin-right: 20px;
-  padding: 4px 13px;
-  text-decoration: none;
-  text-shadow: none;
-  vertical-align: text-bottom;
-  outline-style: none;
-  background: rgba(0, 0, 0, 0);
-  box-shadow: none;
-  border-radius: 100px;
-  border-width: 2px;
-  border-color: #fff;
-  color: #fff;
-  transition: all 0.5s ease;
-}
-
-.btn-custom:hover {
-  background: #fff;
-  border-color: #fff;
-  color: #32599E;
-}
-
-.btn-custom:active {
-  background: #ccc;
-  border-color: #ccc;
-  color: #32599E;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-          box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
-}
-
 .btn-social {
   color: #fff;
   border: none;
@@ -163,6 +125,7 @@ html,body {
   text-decoration: none;
 }
 
+.btn-social:focus,
 .btn-social:active {
   color: rgba(255, 255, 255, 0.4);
 }
