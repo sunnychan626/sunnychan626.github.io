@@ -125,7 +125,6 @@ html,body {
   text-decoration: none;
 }
 
-.btn-social:focus,
 .btn-social:active {
   color: rgba(255, 255, 255, 0.4);
 }
@@ -139,4 +138,13 @@ html,body {
 
 #footer p {
   color: #fff;
+}
+
+/* Media Queries
+================================= */
+
+@media (max-width: 767px) {
+    .btn-social:hover, .btn-social:active {
+        color: rgba(255, 100, 100, 0.4);
+    }
 }

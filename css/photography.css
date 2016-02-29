@@ -51,7 +51,7 @@
   }
 
   .thumb:hover {
-      transform: scale(1); /* don't scale up when displaying edge-to-edge
+      transform: scale(1); /* don't scale up when displaying edge-to-edge */
   }
 
   .jumbotron {
