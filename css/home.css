@@ -52,3 +52,20 @@
     display: inline;
     color: inherit;
 }
+
+.app-icon {
+    margin-bottom: 10px;
+    transition-duration: 0.25s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.app-icon:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.app-icon:active {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}

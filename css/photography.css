@@ -9,8 +9,8 @@
     background-position: center;
     background-size: cover;
     background-image:
-        linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
-        url('../img/home-bg.JPG');
+    linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
+    url('../img/home-bg.JPG');
     background-color: #2D5699;
 }
 
@@ -30,36 +30,53 @@
     margin-left: 13px;
 }
 
-.thumb {
+.photo {
     margin-bottom: 50px;
-    transition-duration: 0.3s;
-    transition-property: transform;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.25s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
 
-.thumb:hover {
+.photo:hover {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.075);
     transform: scale(1.075);
+}
+
+.photo:active {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* Media Queries
 ================================= */
 
 @media (max-width: 767px) {
-   .thumb {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-bottom: 25px;
-  }
+    .photo-container {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: -20px;
+    }
 
-  .thumb:hover {
-      transform: scale(1); /* don't scale up when displaying edge-to-edge */
-  }
+    /* photos have no effect when displaying edge-to-edge */
+    .photo {
+        box-shadow: none;
+    }
 
-  .jumbotron {
-      margin-bottom: 50px;
-  }
+    .photo:hover, .photo:active {
+        box-shadow: none;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
-  .jumbotron h3, .jumbotron h4 {
-      margin-left: 30px;
-  }
+    .jumbotron {
+        margin-bottom: 50px;
+    }
+
+    .jumbotron h3, .jumbotron h4 {
+        margin-left: 30px;
+    }
 
 }
