@@ -9,7 +9,6 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 1.9em;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
@@ -22,8 +21,7 @@
 .hvr-icon-forward:after {
   content: "\f105";
   position: absolute;
-  right: 1em;
-  padding: 0 1px;
+  right: -0.8em;
   font-family: FontAwesome;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -82,17 +80,17 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.1em;
 }
+
 .hvr-icon-down:after {
   content: "\f107";
   position: absolute;
-  right: 1em;
-  padding: 0 1px;
+  right: -1.0em;
   font-family: FontAwesome;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
+
 .hvr-icon-down:hover:after, .hvr-icon-down:focus:after, .hvr-icon-down:active:after {
   -webkit-animation-name: hvr-icon-down;
   animation-name: hvr-icon-down;
