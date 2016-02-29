@@ -147,7 +147,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.2em;
+  padding-right: 2.1em;
 }
 .hvr-icon-down:after {
   content: "\f107";
