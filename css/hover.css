@@ -9,7 +9,7 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  padding-right: 2.1em;
+  padding-right: 1.9em;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
