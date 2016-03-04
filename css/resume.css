@@ -105,11 +105,14 @@
     color: rgba(114, 121, 120, 0.75);
 }
 
+#download-resume {
+    margin-bottom: 30px;
+}
+
 /* Media Queries
 ================================= */
 
 @media (max-width: 767px) {
-    /* parallax effect */
     .container {
         padding-left: 20px;
         padding-right: 20px;

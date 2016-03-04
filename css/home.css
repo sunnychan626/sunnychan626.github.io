@@ -1,5 +1,5 @@
 #section-title {
-    margin-bottom: 50px;
+    padding-top: 10px;
 }
 
 /* Jumbotron
@@ -53,6 +53,9 @@
     color: inherit;
 }
 
+/* App Icons
+================================= */
+
 .app-icon {
     margin-bottom: 10px;
     transition-duration: 0.25s;
@@ -68,4 +71,33 @@
 .app-icon:active {
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
+}
+
+/* Screenshots
+================================= */
+
+.horizontal-screenshot {
+    position: relative; /* enable overlapping elements */
+    margin-top: 20px;
+    margin-bottom: -70px;
+    z-index: -1;
+}
+
+#wwdc-2015-screenshot {
+    margin-bottom: -95px;
+}
+
+/* Entry
+================================= */
+
+.entry {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#magnet-pig, #WWDC-2015 {
+    padding-top: 50px;
+    position: relative; /* enable overlapping elements */
+    background: #F5F5F5;
+    z-index: 1;
 }

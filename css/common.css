@@ -15,12 +15,14 @@ html,body {
   /* Negative indent footer by its height */
   margin: 0 auto -120px;
   /* Pad bottom by footer height */
-  padding: 0 0 155px;
+  padding: 0 0 120px;
 }
 /* Set the fixed height of the footer here */
 #footer {
   height: 125px;
   background-color: #333;
+  position: relative;
+  z-index: 100;
 }
 .center-block {
   display: block;
