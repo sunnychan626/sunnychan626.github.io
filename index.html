@@ -59,151 +59,154 @@
 </head>
 
 <body ontouchstart="">
-    <nav class="navbar navbar-fixed-top" id="custom-navbar">
-        <div id="navbar-row" class="container text-center">
-            <a class="nav-text nav-text-active" href="" onclick='return false'>Home</a>
-            <a class="nav-text" href="photography/">Photography</a>
-            <a class="nav-text" href="resume/">Resume</a>
-        </div>
-    </nav>
+    <div id="container">
+        <nav class="navbar navbar-fixed-top" id="custom-navbar">
+            <div id="navbar-row" class="container text-center">
+                <a class="nav-text nav-text-active" href="" onclick='return false'>Home</a>
+                <a class="nav-text" href="photography/">Photography</a>
+                <a class="nav-text" href="resume/">Resume</a>
+            </div>
+        </nav>
 
-    <div id="wrap" class="text-center">
-        <div class="jumbotron">
-            <div class="container">
-                <div class="row row-centered">
-                    <div class="col-xs-6 col-md-5 col-centered">
-                        <img id="profile-pic" class="img-responsive img-circle center-block" src="img/profile-pic.jpg">
+        <div id="wrap" class="text-center">
+            <div class="jumbotron">
+                <div class="container">
+                    <div class="row row-centered">
+                        <div class="col-xs-6 col-md-5 col-centered">
+                            <img id="profile-pic" class="img-responsive img-circle center-block" src="img/profile-pic.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h1>Sunny Chan</h1>
+                        <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> University of Waterloo<br>Computer Science student<br>Previously at Kik Interactive, Inc.<br>WWDC 13, 14 and 15 Scholarship winner<br>End goal: Human-Computer Interaction</h4>
+                        <p class="social-bar">
+                            <a class="btn-social" type="submit" data-icon="&#xe600;" href="mailto:sunnychan626@me.com" target="_blank"></a>
+                            <a class="btn-social" data-icon="&#xe602;" href="https://ca.linkedin.com/in/sunnychan626" target="_blank"></a>
+                            <a class="btn-social" data-icon="&#xe603;" href="https://twitter.com/sunnychan626" target="_blank"></a>
+                            <a class="btn-social" data-icon="&#xe601;" href="https://instagram.com/sunnychan626" target="_blank"></a>
+                        </p>
                     </div>
                 </div>
-                <div class="row">
-                    <h1>Sunny Chan</h1>
-                    <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> University of Waterloo<br>Computer Science student<br>Previously at Kik Interactive, Inc.<br>WWDC 13, 14 and 15 Scholarship winner<br>End goal: Human-Computer Interaction</h4>
-                    <p class="social-bar">
-                        <a class="btn-social" type="submit" data-icon="&#xe600;" href="mailto:sunnychan626@me.com" target="_blank"></a>
-                        <a class="btn-social" data-icon="&#xe602;" href="https://ca.linkedin.com/in/sunnychan626" target="_blank"></a>
-                        <a class="btn-social" data-icon="&#xe603;" href="https://twitter.com/sunnychan626" target="_blank"></a>
-                        <a class="btn-social" data-icon="&#xe601;" href="https://instagram.com/sunnychan626" target="_blank"></a>
-                    </p>
+            </div>
+            <div class="container-fluid">
+                <div id="section-title">
+                    <h2>Projects</h2>
+                </div>
+                <div class="row entry"  id="project-window">
+                    <div class="row row-centered">
+                        <div class="col-xs-4 col-sm-2 col-centered">
+                            <a href="http://devpost.com/software/project-window-25iwjv" target="_blank">
+                                <img class="img-responsive center-block app-icon" src="img/project-window.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                        <div class="col-sm-6 col-centered">
+                            <h4>Project Window</h4>
+                            <p>An image recognition iOS app designed for<br>those with visual impairment.<br>Powered by Clarifai API.<br>Built at Hack the North 2015.</p>
+                            <p>
+                                <span class="badge">Obj-C</span>
+                                <span class="badge">Clarifai API</span>
+                                <span class="badge">2015</span>
+                            </p>
+                            <p class="text-centered">
+                                <a href="http://devpost.com/software/project-window-25iwjv" target="_blank" class="hvr-icon-forward"><br>Watch demo</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row entry" id="magnet-pig">
+                    <div class="row row-centered">
+                        <div class="col-xs-4 col-sm-2 col-centered">
+                            <a href="http://magnetpig.com" target="_blank">
+                                <img class="img-responsive center-block app-icon" src="img/magnet-pig.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                        <div class="col-sm-6 col-centered">
+                            <h4>Magnet Pig</h4>
+                            <p>A physics-based puzzle game for iOS.<br>Ranked Top Paid App in HK at launch.<br>Designed, developed and launched<br>with a team of five in high school.</p>
+                            <p>
+                                <span class="badge">Obj-C</span>
+                                <span class="badge">Cocos2D</span>
+                                <span class="badge">Box2D</span>
+                                <span class="badge">2013</span>
+                            </p>
+                            <p class="text-centered">
+                                <a href="http://magnetpig.com" target="_blank" class="hvr-icon-forward"><br>Learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row entry" id="dodge-or-die">
+                    <div class="row row-centered">
+                        <div class="col-xs-4 col-sm-2 col-centered">
+                            <a href="https://youtu.be/FblMRvrVOn4" target="_blank">
+                                <img class="img-responsive center-block app-icon" src="img/dodge-or-die.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                        <div class="col-sm-6 col-centered">
+                            <h4>Dodge or Die</h4>
+                            <p>An addictive mini-game built for iOS and Android<br>in partnership with Skytree Digital Ltd.</p>
+                            <p>
+                                <span class="badge">C#</span>
+                                <span class="badge">Unity</span>
+                                <span class="badge">2014</span>
+                            </p>
+                            <p class="text-centered">
+                                <a href="https://youtu.be/FblMRvrVOn4" target="_blank" class="hvr-icon-forward"><br>Watch trailer</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5 col-centered">
+                        <img class="img-responsive center-block horizontal-screenshot" src="img/dodge-or-die-screenshot.png">
+                    </div>
+                </div>
+                <div class="row entry" id="WWDC-2015">
+                    <div class="row row-centered">
+                        <div class="col-xs-4 col-sm-2 col-centered">
+                            <a href="https://youtu.be/0Sn-WYQ73MU" target="_blank">
+                                <img class="img-responsive center-block app-icon" src="img/wwdc-2015.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row row-centered">
+                        <div class="col-sm-6 col-centered">
+                            <h4>WWDC 2015 Scholarship</h4>
+                            <p>An &ldquo;about me&rdquo; iPad app that showcases<br>my creativity and technical skills.<br>One of 350 students worldwide<br>to attend WWDC 2015.</p>
+                            <p>
+                                <span class="badge">Obj-C</span>
+                                <span class="badge">Cocos2D</span>
+                                <span class="badge">2015</span>
+                            </p>
+                            <p class="text-centered">
+                                <a href="https://youtu.be/0Sn-WYQ73MU" target="_blank" class="hvr-icon-forward"><br>Watch demo</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5 col-centered">
+                        <img class="img-responsive center-block horizontal-screenshot" id="wwdc-2015-screenshot" src="img/wwdc-2015-screenshot.png">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div id="section-title">
-                <h2>Projects</h2>
-            </div>
-            <div class="row entry"  id="project-window">
-                <div class="row row-centered">
-                    <div class="col-xs-4 col-sm-2 col-centered">
-                        <a href="http://devpost.com/software/project-window-25iwjv" target="_blank">
-                            <img class="img-responsive center-block app-icon" src="img/project-window.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="row row-centered">
-                    <div class="col-sm-6 col-centered">
-                        <h4>Project Window</h4>
-                        <p>An image recognition iOS app designed for<br>those with visual impairment.<br>Powered by Clarifai API.<br>Built at Hack the North 2015.</p>
-                        <p>
-                            <span class="badge">Obj-C</span>
-                            <span class="badge">Clarifai API</span>
-                            <span class="badge">2015</span>
-                        </p>
-                        <p class="text-centered">
-                            <a href="http://devpost.com/software/project-window-25iwjv" target="_blank" class="hvr-icon-forward"><br>Watch demo</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row entry" id="magnet-pig">
-                <div class="row row-centered">
-                    <div class="col-xs-4 col-sm-2 col-centered">
-                        <a href="http://magnetpig.com" target="_blank">
-                            <img class="img-responsive center-block app-icon" src="img/magnet-pig.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="row row-centered">
-                    <div class="col-sm-6 col-centered">
-                        <h4>Magnet Pig</h4>
-                        <p>A physics-based puzzle game for iOS.<br>Ranked Top Paid App in HK at launch.<br>Designed, developed and launched<br>with a team of five in high school.</p>
-                        <p>
-                            <span class="badge">Obj-C</span>
-                            <span class="badge">Cocos2D</span>
-                            <span class="badge">Box2D</span>
-                            <span class="badge">2013</span>
-                        </p>
-                        <p class="text-centered">
-                            <a href="http://magnetpig.com" target="_blank" class="hvr-icon-forward"><br>Learn more</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row entry" id="dodge-or-die">
-                <div class="row row-centered">
-                    <div class="col-xs-4 col-sm-2 col-centered">
-                        <a href="https://youtu.be/FblMRvrVOn4" target="_blank">
-                            <img class="img-responsive center-block app-icon" src="img/dodge-or-die.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="row row-centered">
-                    <div class="col-sm-6 col-centered">
-                        <h4>Dodge or Die</h4>
-                        <p>An addictive mini-game built for iOS and Android<br>in partnership with Skytree Digital Ltd.</p>
-                        <p>
-                            <span class="badge">C#</span>
-                            <span class="badge">Unity</span>
-                            <span class="badge">2014</span>
-                        </p>
-                        <p class="text-centered">
-                            <a href="https://youtu.be/FblMRvrVOn4" target="_blank" class="hvr-icon-forward"><br>Watch trailer</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5 col-centered">
-                    <img class="img-responsive center-block horizontal-screenshot" src="img/dodge-or-die-screenshot.png">
-                </div>
-            </div>
-            <div class="row entry" id="WWDC-2015">
-                <div class="row row-centered">
-                    <div class="col-xs-4 col-sm-2 col-centered">
-                        <a href="https://youtu.be/0Sn-WYQ73MU" target="_blank">
-                            <img class="img-responsive center-block app-icon" src="img/wwdc-2015.png">
-                        </a>
-                    </div>
-                </div>
-                <div class="row row-centered">
-                    <div class="col-sm-6 col-centered">
-                        <h4>WWDC 2015 Scholarship</h4>
-                        <p>An &ldquo;about me&rdquo; iPad app that showcases<br>my creativity and technical skills.<br>One of 350 students worldwide<br>to attend WWDC 2015.</p>
-                        <p>
-                            <span class="badge">Obj-C</span>
-                            <span class="badge">Cocos2D</span>
-                            <span class="badge">2015</span>
-                        </p>
-                        <p class="text-centered">
-                            <a href="https://youtu.be/0Sn-WYQ73MU" target="_blank" class="hvr-icon-forward"><br>Watch demo</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-7 col-md-6 col-lg-5 col-centered">
-                    <img class="img-responsive center-block horizontal-screenshot" id="wwdc-2015-screenshot" src="img/wwdc-2015-screenshot.png">
-                </div>
+
+        <div id="footer">
+            <div class="container text-center">
+                <p class="social-bar">
+                    <a class="btn-social" data-icon="&#xe600;" href="mailto:sunnychan626@me.com" target="_blank"></a>
+                    <a class="btn-social" data-icon="&#xe602;" href="https://ca.linkedin.com/in/sunnychan626" target="_blank"></a>
+                    <a class="btn-social" data-icon="&#xe603;" href="https://twitter.com/sunnychan626" target="_blank"></a>
+                    <a class="btn-social" data-icon="&#xe601;" href="https://instagram.com/sunnychan626" target="_blank"></a>
+                </p>
+                <p>&copy; 2016 Sunny Chan</p>
             </div>
         </div>
     </div>
 
-    <div id="footer">
-        <div class="container text-center">
-            <p class="social-bar">
-                <a class="btn-social" data-icon="&#xe600;" href="mailto:sunnychan626@me.com" target="_blank"></a>
-                <a class="btn-social" data-icon="&#xe602;" href="https://ca.linkedin.com/in/sunnychan626" target="_blank"></a>
-                <a class="btn-social" data-icon="&#xe603;" href="https://twitter.com/sunnychan626" target="_blank"></a>
-                <a class="btn-social" data-icon="&#xe601;" href="https://instagram.com/sunnychan626" target="_blank"></a>
-            </p>
-            <p>&copy; 2016 Sunny Chan</p>
-        </div>
-    </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
