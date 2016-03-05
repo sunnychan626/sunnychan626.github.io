@@ -14,7 +14,13 @@
         linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
         url('https://source.unsplash.com/featured/800x450/?nature,water');
     background-color: #2D5699;
-    background-attachment: fixed;
+}
+
+@media (min-width: 1200px) {
+    /* parallax effect */
+    .jumbotron {
+        background-attachment: fixed;
+    }
 }
 
 .jumbotron h1, .jumbotron h3, .jumbotron h4, .jumbotron p{
