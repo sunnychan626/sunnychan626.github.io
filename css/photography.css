@@ -4,7 +4,7 @@
 .jumbotron {
     text-align: left;
     padding-top: 73px;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -72,7 +72,7 @@
     }
 
     .jumbotron {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .jumbotron h3, .jumbotron h4 {
