@@ -1,37 +1,37 @@
 /* Layout
 ================================= */
 html,body {
-  height: 100%;
-  width: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-  overflow-x: visible; /* disable horizontal scrolling */
-  overflow-y: visible;
-  -webkit-overflow-scrolling: touch; /* "momentum" style scrolling */
-  -webkit-tap-highlight-color: rgba(10, 10, 10, 0.5);
+    height: 100%;
+    width: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch; /* "momentum" style scrolling */
+    -webkit-tap-highlight-color: rgba(10, 10, 10, 0.5);
 }
+
 .container {
-	max-width: 1200px;
+    max-width: 1200px;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -120px;
-  /* Pad bottom by footer height */
-  padding: 0 0 120px;
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -120px;
+    /* Pad bottom by footer height */
+    padding: 0 0 120px;
 }
 /* Set the fixed height of the footer here */
 #footer {
-  height: 125px;
-  background-color: #333;
-  position: relative;
-  z-index: 100;
+    height: 125px;
+    background-color: #333;
+    position: relative;
+    z-index: 100;
 }
 .center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* centered columns styles */
 .row-centered {
@@ -48,101 +48,101 @@ html,body {
 ================================= */
 
 #custom-navbar {
-  background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(30, 30, 30, 0.9);
 }
 
 #navbar-row {
-  margin-top: 15px;
-  vertical-align: middle;
+    margin-top: 15px;
+    vertical-align: middle;
 }
 
 .nav-text {
-  font-family: "open-sans",sans-serif;
-  color: #fff;
-  margin-right: 20px;
+    font-family: "open-sans",sans-serif;
+    color: #fff;
+    margin-right: 20px;
 }
 
 .nav-text:hover {
-  color: rgba(255, 255, 255, 0.6);
-  margin-right: 20px;
-  text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 20px;
+    text-decoration: none;
 }
 
 .nav-text:active {
-  color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .nav-text-active {
-  color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .nav-text-active:hover {
-  color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /* Glyphicons
 ================================ */
 
 .glyphicon {
-	font-size: 3em;
-	display: block;
-	text-align: center;
-	color: #3a87ad;
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    color: #3a87ad;
 }
 
 /* Social Icons
 ================================ */
 .social-bar {
-  margin-top: 28px;
+    margin-top: 28px;
 }
 
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 [data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 }
 
 .btn-social {
-  color: #fff;
-  border: none;
-  margin-top: 100px;
-  margin-right: 20px;
-  vertical-align: text-bottom;
-  font-size: 1.2em;
+    color: #fff;
+    border: none;
+    margin-top: 100px;
+    margin-right: 20px;
+    vertical-align: text-bottom;
+    font-size: 1.2em;
 }
 
 .btn-social:hover, .btn-social:focus {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 
 .btn-social:active {
-  color: rgba(255, 255, 255, 0.4);
-  text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
 }
 
 #footer .btn-social {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 /* Footer
 ================================= */
 
 #footer p {
-  color: #fff;
+    color: #fff;
 }
