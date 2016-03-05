@@ -99,6 +99,14 @@
     padding-bottom: 40px;
 }
 
+.entry h4 {
+    color: rgba(56, 56, 56, 0.9);
+}
+
+.entry p {
+    color: rgba(110, 110, 110, 1);
+}
+
 #magnet-pig, #WWDC-2015 {
     padding-top: 50px;
     position: relative; /* enable overlapping elements */
