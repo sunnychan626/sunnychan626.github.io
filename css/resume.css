@@ -60,7 +60,7 @@
 .resume-section {
     vertical-align: top;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .entry {
@@ -117,5 +117,9 @@
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .resume-section {
+        margin-bottom: 15px;
     }
 }
