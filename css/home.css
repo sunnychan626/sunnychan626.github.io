@@ -1,4 +1,4 @@
-#container {
+#body-container {
     overflow-x: hidden;
 }
 
@@ -83,20 +83,34 @@
 .horizontal-screenshot {
     position: relative; /* enable overlapping elements */
     margin-top: 20px;
-    margin-bottom: -70px;
-    z-index: -1;
+    z-index: -5;
 }
 
-#wwdc-2015-screenshot {
-    margin-bottom: -95px;
+#project-window-screenshot-xs {
+    margin-bottom: -40px;
+}
+
+#magnet-pig-screenshot-xs {
+    margin-bottom: -70px;
+}
+
+#wwdc-2015-screenshot-xs {
+    margin-bottom: -80px;
+}
+
+#dodge-or-die-screenshot-xs {
+    margin-bottom: -65px;
 }
 
 /* Entry
 ================================= */
 
 .entry {
+    position: relative; /* enable overlapping elements */
+    z-index: 10;
     padding-top: 50px;
     padding-bottom: 40px;
+    background: white;
 }
 
 .entry h4 {
@@ -107,9 +121,24 @@
     color: rgba(110, 110, 110, 1);
 }
 
-#magnet-pig, #WWDC-2015 {
-    padding-top: 50px;
-    position: relative; /* enable overlapping elements */
+#magnet-pig-entry, #dodge-or-die-entry {
     background: #F5F5F5;
-    z-index: 1;
+}
+
+/* Media Queries
+================================= */
+
+@media (max-width: 767px) {
+    .description {
+        text-align: center;
+    }
+    .app-icon-row {
+        text-align:center;
+    }
+    .app-icon-col {
+        display:inline-block;
+        float:none;
+        /* inline-block space fix */
+        margin-right:-4px;
+    }
 }
