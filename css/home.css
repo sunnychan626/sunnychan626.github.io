@@ -16,7 +16,7 @@
     background-size: cover;
     background-image:
         linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
-        url('https://source.unsplash.com/featured/800x450/?nature,water');
+        url('../img/cover-photo.JPG');
     background-color: #2D5699;
 }
 
