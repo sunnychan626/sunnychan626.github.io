@@ -128,4 +128,5 @@
 ================================= */
 .jumbotron, #intro, .resume {
     opacity: 0;
+    -webkit-backface-visibility: hidden; /* prevents flickering */
 }

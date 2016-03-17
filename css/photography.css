@@ -85,4 +85,5 @@
 ================================= */
 .jumbotron, #intro, #photos {
     opacity: 0;
+    -webkit-backface-visibility: hidden; /* prevents flickering */
 }

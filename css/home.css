@@ -147,4 +147,5 @@
 ================================= */
 .jumbotron, #profile-pic, #intro, #projects {
     opacity: 0;
+    -webkit-backface-visibility: hidden; /* prevents flickering */
 }
