@@ -123,3 +123,9 @@
         margin-bottom: 15px;
     }
 }
+
+/* Hide elements before fading in
+================================= */
+.jumbotron, #intro, .resume {
+    opacity: 0;
+}

@@ -80,3 +80,9 @@
     }
 
 }
+
+/* Hide elements before fading in
+================================= */
+.jumbotron, #intro, #photos {
+    opacity: 0;
+}
