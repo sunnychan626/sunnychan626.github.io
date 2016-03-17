@@ -79,7 +79,7 @@
                             <img id="profile-pic" class="img-responsive img-circle center-block" src="img/profile-pic.jpg">
                         </div>
                     </div>
-                    <div class="row text-center">
+                    <div id="intro" class="row text-center">
                         <h1>Sunny Chan</h1>
                         <h4><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> San Francisco, CA<br>Currently at Eventbrite, Inc.<br>CS at University of Waterloo<br>WWDC 13, 14 and 15 Scholarship winner<br>End goal: Human-Computer Interaction</h4>
                         <p class="social-bar">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            <div id="projects" class="container-fluid">
                 <!-- Project Window -->
                 <div id="project-window-entry" class="row entry">
                     <div class="row app-icon-row">
@@ -241,6 +241,24 @@
 
 
     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src='js/jquery.transit.js'></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        var duration = 400
+        var delay = 100
+        $(".jumbotron").css({ opacity: 0.0 });
+        $(".jumbotron").transition({ opacity: 1.0, delay: delay}, 350, 'linear');
+        delay += duration
+        $("#profile-pic").css({ opacity: 0.0, scale: 0.3 });
+        $("#profile-pic").transition({ opacity: 1.0, scale: 1.0, delay: delay}, duration, 'snap');
+        delay += duration
+        $("#intro").css({ opacity: 0.0 });
+        $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
+        delay += duration
+        $("#projects").css({ opacity: 0.0 });
+        $("#projects").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
+    });
+    </script>
 </body>
 </html>
