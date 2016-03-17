@@ -140,16 +140,16 @@
     <script src='../js/jquery.transit.js'></script>
     <script src="../js/bootstrap.min.js"></script>
     <script>
+    $(".jumbotron").css({ opacity: 0.0 });
+    $("#intro").css({ opacity: 0.0 });
+    $("#photos").css({ opacity: 0.0 });
     $( document ).ready(function() {
         var duration = 400
         var delay = 100
-        $(".jumbotron").css({ opacity: 0.0 });
         $(".jumbotron").transition({ opacity: 1.0, delay: delay}, 350, 'linear');
         delay += duration
-        $("#intro").css({ opacity: 0.0 });
         $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
         delay += duration
-        $("#photos").css({ opacity: 0.0 });
         $("#photos").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
     });
     </script>

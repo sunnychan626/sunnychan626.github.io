@@ -244,19 +244,19 @@
     <script src='js/jquery.transit.js'></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+    $(".jumbotron").css({ opacity: 0.0 });
+    $("#profile-pic").css({ opacity: 0.0, scale: 0.3 });
+    $("#intro").css({ opacity: 0.0 });
+    $("#projects").css({ opacity: 0.0 });
     $( document ).ready(function() {
         var duration = 400
         var delay = 100
-        $(".jumbotron").css({ opacity: 0.0 });
         $(".jumbotron").transition({ opacity: 1.0, delay: delay}, 350, 'linear');
         delay += duration
-        $("#profile-pic").css({ opacity: 0.0, scale: 0.3 });
         $("#profile-pic").transition({ opacity: 1.0, scale: 1.0, delay: delay}, duration, 'snap');
         delay += duration
-        $("#intro").css({ opacity: 0.0 });
         $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
         delay += duration
-        $("#projects").css({ opacity: 0.0 });
         $("#projects").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
     });
     </script>
