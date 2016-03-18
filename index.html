@@ -49,7 +49,7 @@
       <![endif]-->
       <!-- Adobe TypeKit -->
       <script src="https://use.typekit.net/jkn4fjs.js"></script>
-      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+      <script>try{Typekit.load({ async: false });}catch(e){}</script>
       <!-- Google Analytics -->
       <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -65,15 +65,15 @@
     <nav class="navbar navbar-fixed-top" id="custom-navbar">
         <div id="navbar-row" class="container text-center">
             <a class="nav-text nav-text-active" onclick='return false'>Home</a>
-            <a class="nav-text" href="photography/">Photography</a>
-            <a class="nav-text" href="resume/">Resume</a>
+            <a class="nav-text" href="photography/index.html">Photography</a>
+            <a class="nav-text" href="resume/index.html">Resume</a>
         </div>
     </nav>
 
     <div id="body-container">
         <div id="wrap">
             <div class="jumbotron">
-                <div class="container">
+                <div class="container fade-out">
                     <div class="row row-centered">
                         <div class="col-xs-6 col-md-5 col-centered">
                             <img id="profile-pic" class="img-responsive img-circle center-block" src="img/profile-pic.jpg">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div id="projects" class="container-fluid">
+            <div id="projects" class="container-fluid fade-out">
                 <!-- Project Window -->
                 <div id="project-window-entry" class="row entry">
                     <div class="row app-icon-row">
@@ -225,7 +225,7 @@
             </div>
         </div>
 
-        <div id="footer">
+        <div id="footer" class="fade-out">
             <div class="container text-center">
                 <p class="social-bar">
                     <a class="btn-social" type="submit" data-icon="&#xe90c;" href="mailto:sunnychan626@me.com" target="_blank"></a>
@@ -245,16 +245,28 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
     $("#profile-pic").css({ scale: 0.3 });
-    $( document ).ready(function() {
+    $(document).ready(function() {
         var duration = 400
         var delay = 100
-        $(".jumbotron").transition({ opacity: 1.0, delay: delay}, 350, 'linear');
-        delay += duration
+        $(".jumbotron").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
+        delay += duration;
         $("#profile-pic").transition({ opacity: 1.0, scale: 1.0, delay: delay}, duration, 'snap');
         delay += duration
         $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-        delay += duration
         $("#projects").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
+    });
+
+    $(".nav-text").click(function(event) {
+        event.preventDefault();
+        var goTo = this.getAttribute("href");
+        var height = 240;
+        if ($(this).text() === "Resume") {
+            height = 340;
+        }
+        $(".fade-out").transition({ opacity: 0.0 }, 300, 'linear');
+        $(".jumbotron").animate({ height: height, opacity: 0.1 }, 400, 'linear', function() {
+            window.location = goTo;
+        });
     });
     </script>
 </body>

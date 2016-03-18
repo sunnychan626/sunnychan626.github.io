@@ -87,3 +87,7 @@
     opacity: 0;
     -webkit-backface-visibility: hidden; /* prevents flickering */
 }
+
+.jumbotron {
+    opacity: 0.1;
+}
