@@ -32,6 +32,7 @@
     font-weight: lighter;
     margin-top: 10px;
     margin-bottom: 35px;
+    font-size: 250%;
 }
 
 .jumbotron h4 {
@@ -125,6 +126,9 @@
 ================================= */
 
 @media (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 200%;
+    }
     .description {
         text-align: center;
     }
