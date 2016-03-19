@@ -68,8 +68,9 @@ html,body {
     text-decoration: none;
 }
 
-.nav-text:active {
+.nav-text:active, .nav-text:focus {
     color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
 }
 
 .nav-text-active {

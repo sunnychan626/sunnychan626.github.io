@@ -63,15 +63,15 @@
 <body>
     <nav class="navbar navbar-fixed-top" id="custom-navbar">
         <div id="navbar-row" class="container text-center">
-            <a class="nav-text" href="../index.html">Home</a>
-            <a class="nav-text" href="../photography/index.html">Photography</a>
+            <a class="nav-text nav-link" href="../index.html">Home</a>
+            <a class="nav-text nav-link" href="../photography/index.html">Photography</a>
             <a class="nav-text nav-text-active" onclick='return false'>Resume</a>
         </div>
     </nav>
 
-    <div id="wrap" class="text-center">
-        <div class="jumbotron">
-            <div id="intro" class="container">
+    <div id="wrap" class="text-center fade-out">
+        <div class="jumbotron fade-in-0">
+            <div id="intro" class="container fade-in-1">
                 <div class="row">
                     <div class="col-sm-11 col-sm-offset-1">
                         <h2>Sunny Chan</h2>
@@ -88,8 +88,7 @@
             </div>
         </div>
 
-        <div class="container resume">
-
+        <div class="container resume fade-in-1">
             <div class="row resume-section">
                 <div class="col-sm-2 col-sm-offset-1  section-title">
                     <h5>Experience</h5>
@@ -228,15 +227,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src='../js/jquery.transit.js'></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        var duration = 400;
-        var delay = 200;
-        $(".jumbotron").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-        delay += duration;
-        $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-        $(".resume").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-    });
-    </script>
+    <script src="../js/fade-in-out.js"></script>
+
 </body>
 </html>

@@ -2,10 +2,6 @@
     overflow-x: hidden;
 }
 
-#section-title {
-    padding-top: 10px;
-}
-
 /* Jumbotron
 ================================= */
 
@@ -28,7 +24,7 @@
 }
 
 .jumbotron h1, .jumbotron h3, .jumbotron h4, .jumbotron p{
-    color: #fff;
+    color: white;
 }
 
 .jumbotron h1 {
@@ -48,7 +44,7 @@
 #profile-pic {
     border-style: solid;
     border-width: medium;
-    border-color: #fff;
+    border-color: white;
 }
 
 .jumbotron .glyphicon {
@@ -148,8 +144,4 @@
 .jumbotron, #profile-pic, #intro, #projects {
     opacity: 0;
     -webkit-backface-visibility: hidden; /* prevents flickering */
-}
-
-.jumbotron {
-    opacity: 0.1;
 }

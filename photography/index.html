@@ -61,15 +61,15 @@
 <body>
     <nav class="navbar navbar-fixed-top" id="custom-navbar">
         <div id="navbar-row" class="container text-center">
-            <a class="nav-text" href="../index.html">Home</a>
+            <a class="nav-text nav-link" href="../index.html">Home</a>
             <a class="nav-text nav-text-active" onclick='return false'>Photography</a>
-            <a class="nav-text" href="../resume/index.html">Resume</a>
+            <a class="nav-text nav-link" href="../resume/index.html">Resume</a>
         </div>
     </nav>
 
-    <div id="wrap" class="text-center">
-        <div class="jumbotron">
-            <div id ="intro" class="container">
+    <div id="wrap" class="text-center fade-out">
+        <div class="jumbotron fade-in-0">
+            <div id ="intro" class="container fade-in-1">
                 <div class="row">
                     <h3>&ldquo;The art challenges the technology, and the technology inspires the art.&rdquo;</h3>
                     <h4>&mdash; John Lasseter</h4>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div id="photos" class="container">
+        <div id="photos" class="container fade-in-1">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-lg-4 photo-container">
                     <a href="../img/photography-5.JPG" target="_blank">
@@ -139,15 +139,6 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src='../js/jquery.transit.js'></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        var duration = 400;
-        var delay = 300;
-        $(".jumbotron").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-        delay += duration;
-        $("#intro").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-        $("#photos").transition({ opacity: 1.0, delay: delay}, duration, 'linear');
-    });
-    </script>
+    <script src="../js/fade-in-out.js"></script>
 </body>
 </html>
