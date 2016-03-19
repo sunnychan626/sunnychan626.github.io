@@ -126,7 +126,7 @@
 
 /* Hide elements before fading in
 ================================= */
-.jumbotron, #intro, .resume {
+.jumbotron, #intro, .resume, #footer {
     opacity: 0;
     -webkit-backface-visibility: hidden; /* prevents flickering */
 }

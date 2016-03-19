@@ -83,7 +83,7 @@
 
 /* Hide elements before fading in
 ================================= */
-.jumbotron, #intro, #photos {
+.jumbotron, #intro, #photos, #footer {
     opacity: 0;
     -webkit-backface-visibility: hidden; /* prevents flickering */
 }
