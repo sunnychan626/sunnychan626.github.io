@@ -82,12 +82,12 @@
 }
 
 .entry h5 {
-    color: rgba(56, 56, 56, 0.9);
+    color: rgba(71, 72, 72, 1);
 }
 
 .entry-detail {
     font-weight: 400;
-    color: rgba(110, 110, 110, 1);
+    color: rgba(96, 96, 96, 1);
 }
 
 .entry h6 {
@@ -101,8 +101,13 @@
     color: rgba(114, 121, 120, 1);
 }
 
-.light-text {
+.language-list {
+    font-size: 1.0em;
     font-weight: 300;
+    color: rgba(96, 96, 96, 1);
+}
+
+.light-text {
     color: rgba(114, 121, 120, 0.75);
 }
 
