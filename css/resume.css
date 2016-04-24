@@ -60,7 +60,7 @@
 .resume-section {
     vertical-align: top;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .entry {
@@ -113,6 +113,11 @@
 
 #download-resume {
     margin-bottom: 30px;
+}
+
+ul {
+    list-style-position: outside;
+    padding-left: 20px;
 }
 
 /* Media Queries
