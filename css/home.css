@@ -1,151 +1,151 @@
 #body-container {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 /* Jumbotron
 ================================= */
 
 .jumbotron {
-    padding-top: 110px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image:
-        linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
-        url('../img/cover-photo.JPG');
-    background-color: #2D5699;
+  padding-top: 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image:
+  linear-gradient(rgba(60, 110, 210, 0.75), rgba(60, 110, 210, 0.75)),
+  url('../img/cover-photo.JPG');
+  background-color: #2D5699;
 }
 
 @media (min-width: 1200px) {
-    /* parallax effect */
-    .jumbotron {
-        background-attachment: fixed;
-    }
+  /* parallax effect */
+  .jumbotron {
+    background-attachment: fixed;
+  }
 }
 
 .jumbotron h1, .jumbotron h3, .jumbotron h4, .jumbotron p{
-    color: white;
+  color: white;
 }
 
 .jumbotron h1 {
-    font-family: "open-sans",sans-serif;
-    font-weight: lighter;
-    margin-top: 10px;
-    margin-bottom: 35px;
-    font-size: 250%;
+  font-family: "open-sans",sans-serif;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  font-size: 250%;
 }
 
 .jumbotron h4 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: normal;
-    line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  line-height: 1.6;
 }
 
 #profile-pic {
-    border-style: solid;
-    border-width: medium;
-    border-color: white;
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
 }
 
 .jumbotron .glyphicon {
-    font-size: 0.9em;
-    display: inline;
-    color: inherit;
+  font-size: 0.9em;
+  display: inline;
+  color: inherit;
 }
 
 /* App Icons
 ================================= */
 
 .app-icon {
-    margin-bottom: 10px;
-    transition-duration: 0.25s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
+  margin-bottom: 10px;
+  transition-duration: 0.25s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
 }
 
 .app-icon:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .app-icon:active {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Screenshots
 ================================= */
 
 .horizontal-screenshot {
-    position: relative; /* enable overlapping elements */
-    margin-top: 20px;
-    z-index: -5;
+  position: relative; /* enable overlapping elements */
+  margin-top: 20px;
+  z-index: -5;
 }
 
 #project-window-screenshot-xs {
-    margin-bottom: -40px;
+  margin-bottom: -40px;
 }
 
 #magnet-pig-screenshot-xs {
-    margin-bottom: -70px;
+  margin-bottom: -70px;
 }
 
 #wwdc-2015-screenshot-xs {
-    margin-bottom: -80px;
+  margin-bottom: -80px;
 }
 
 #dodge-or-die-screenshot-xs {
-    margin-bottom: -60px;
+  margin-bottom: -60px;
 }
 
 /* Entry
 ================================= */
 
 .entry {
-    position: relative; /* enable overlapping elements */
-    z-index: 10;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    background: white;
+  position: relative; /* enable overlapping elements */
+  z-index: 10;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: white;
 }
 
 .entry h4 {
-    color: rgba(56, 56, 56, 0.9);
+  color: rgba(56, 56, 56, 0.9);
 }
 
 .entry p {
-    color: rgba(110, 110, 110, 1);
+  color: rgba(110, 110, 110, 1);
 }
 
 #magnet-pig-entry, #dodge-or-die-entry {
-    background: rgba(250, 250, 250, 1);
+  background: rgba(250, 250, 250, 1);
 }
 
 /* Media Queries
 ================================= */
 
 @media (max-width: 767px) {
-    .jumbotron h1 {
-        font-size: 200%;
-    }
-    .description {
-        text-align: center;
-    }
-    .app-icon-row {
-        text-align:center;
-    }
-    .app-icon-col {
-        display:inline-block;
-        float:none;
-        /* inline-block space fix */
-        margin-right:-4px;
-    }
+  .jumbotron h1 {
+    font-size: 200%;
+  }
+  .description {
+    text-align: center;
+  }
+  .app-icon-row {
+    text-align:center;
+  }
+  .app-icon-col {
+    display:inline-block;
+    float:none;
+    /* inline-block space fix */
+    margin-right:-4px;
+  }
 }
 
 /* Hide elements before fading in
 ================================= */
 .jumbotron, #profile-pic, #intro, #projects {
-    opacity: 0;
-    -webkit-backface-visibility: hidden; /* prevents flickering */
+  opacity: 0;
+  -webkit-backface-visibility: hidden; /* prevents flickering */
 }
